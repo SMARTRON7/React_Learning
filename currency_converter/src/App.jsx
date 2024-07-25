@@ -27,11 +27,18 @@ function App() {
 
   return (
     <div
-      className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
+      className="w-full h-screen grid grid-cols-2 divide-x justify-center items-center bg-cover bg-no-repeat"
       style={{
         backgroundImage: `url('https://images.pexels.com/photos/164636/pexels-photo-164636.jpeg')`,
       }}
     >
+      <div className="w-full">
+        <div className="flex flex-row w-full h-full max-w-md justify-center items-center mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
+
+          <img className="rounded-full w-1/2 h-1/2" src="https://images.pexels.com/photos/19378027/pexels-photo-19378027/free-photo-of-portrait-of-brunette-woman-in-sunlight.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image description"></img>
+
+        </div>
+      </div>
       <div className="w-full">
         <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
           <form
