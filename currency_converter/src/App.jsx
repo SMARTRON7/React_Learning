@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div
-      className="w-full h-screen grid grid-cols-2 divide-x justify-center items-center bg-cover bg-no-repeat"
+      className="w-full h-screen grid grid-cols-2 justify-center items-center bg-cover bg-no-repeat"
       style={{
         backgroundImage: `url('https://images.pexels.com/photos/164636/pexels-photo-164636.jpeg')`,
       }}
