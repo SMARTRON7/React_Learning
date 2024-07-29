@@ -32,13 +32,13 @@ function App() {
         backgroundImage: `url('https://images.pexels.com/photos/164636/pexels-photo-164636.jpeg')`,
       }}
     >
-      <div className="w-full">
-        <div className="flex flex-row w-full h-full max-w-md justify-center items-center mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
+      <div className="w-full justify-center items-center ">
 
-          <img className="rounded-full w-1/2 h-1/2" src="https://images.pexels.com/photos/19378027/pexels-photo-19378027/free-photo-of-portrait-of-brunette-woman-in-sunlight.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image description"></img>
 
-        </div>
-      </div>
+        <img className="flex flex-row w-1/2 h-1/2 max-w-md justify-center items-center mx-auto border border-gray-60 p-5 backdrop-blur-sm bg-white/30 rounded-full" src="https://images.pexels.com/photos/19378027/pexels-photo-19378027/free-photo-of-portrait-of-brunette-woman-in-sunlight.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image description"></img>
+
+
+      </div >
       <div className="w-full">
         <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
           <form
@@ -53,7 +53,7 @@ function App() {
                 label="From"
                 amount={amount}
                 CurrencyOptions={options}
-                onCurrencyChange={(currency) => setAmount(amount)}
+                onCurrencyChange={(currency) => setFrom(currency)}
                 selectCurrency={from}
                 onAmountChange={(amount => setAmount(amount))}
 
@@ -74,7 +74,7 @@ function App() {
                 amount={convertedAmount}
                 CurrencyOptions={options}
                 onCurrencyChange={(currency) => setTo(currency)}
-                selectCurrency={from}
+                selectCurrency={to}
                 amountDisable
 
               />
@@ -86,7 +86,7 @@ function App() {
           </form>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 
